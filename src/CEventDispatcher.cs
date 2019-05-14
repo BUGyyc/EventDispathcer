@@ -1,3 +1,9 @@
+/*
+ * @Author: delevin.ying 
+ * @Date: 2019-05-14 10:33:24 
+ * @Last Modified by:   delevin.ying 
+ * @Last Modified time: 2019-05-14 10:33:24 
+ */
 using System.Collections.Generic;
 public class CEventDispatcher {
     public Dictionary<string, CEventListener> eventListenerDic; //事件名称与事件监听者的字典

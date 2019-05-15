@@ -3,16 +3,16 @@
 ## 派发事件
 
 ### 不带参数
-```CEventDispatcherObj.dispatchEvent(new CEvent(CEventName.TEST_EVENT),this);```
+```CEventDispatcherObj.cEventDispatcher.dispatchEvent(new CEvent(CEventName.TEST_EVENT),this);```
 
 
 ### 带参数
-```CEventDispatcherObj.dispatchEvent(new CEvent(CEventName.TEST_EVENT,"hello world"),this);```
+```CEventDispatcherObj.cEventDispatcher.dispatchEvent(new CEvent(CEventName.TEST_EVENT,"hello world"),this);```
 
 
 ## 监听事件
 ```
-CEventDispatcherObj.addEventListener(CEventName.TEST_EVENT,eventCallback);
+CEventDispatcherObj.cEventDispatcher.addEventListener(CEventName.TEST_EVENT,eventCallback);
 ```
 
 ```
@@ -25,4 +25,4 @@ public void eventCallback(CEvent evt){
 
 ## 移除事件
 
-```CEventDispatcherObj.removeEventListener(CEventName.TEST_EVENT,eventCallback);```
+```CEventDispatcherObj.cEventDispatcher.removeEventListener(CEventName.TEST_EVENT,eventCallback);```
